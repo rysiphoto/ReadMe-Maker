@@ -1,30 +1,30 @@
 
 ## Table of Contents
-##### 1. [Project Description](#description)
-##### 2. [GitHub Address](#GitHub)
-##### 3. [License Type](#license)
-##### 4. [Dependencies](#dep)
-##### 5. [Test Run Commands](#test)
-##### 6. [Author Contact Information](#author)
+##### 1. [Project Description](#Project-Description)
+##### 2. [GitHub Address](#GitHub-Address)
+##### 3. [License Type](#license-type)
+##### 4. [Dependencies](#Dependencies)
+##### 5. [Test Run Commands](#Test-Run-Commands)
+##### 6. [Author Contact Information](#Author-Contact-Information)
 
 # **ReadMe Generator**
 
-### **Project Description:**(#description)
+### **Project Description:**
 ##### Creates a well formatted ReadMe file for projects by utilizing markdown 
 
-### **GitHub Address:**(# GitHub)
+### **GitHub Address:**
 [ReadMe Generator](https://github.com/rysiphoto/ReadMe-Maker)
 
-### **License Type:** {#license}
+### **License Type:**
 ##### MIC
 
-### **Dependencies** {#dep}
+### **Dependencies**
 ##### npm i
     
-### **Test Run Commands** {#test}
+### **Test Run Commands**
 ##### test
 
-### **Author Contact Information:** {#author}
+### **Author Contact Information:**
 * Ryan Siverson
 * ryan.siverson@du.edu
 * [GitHub](https://github.com/rysiphoto)
