@@ -93,7 +93,7 @@ promptUser()
     .then(function (answers) {
         const html = generateMD(answers);
 
-        return writeFileAsync("index.md", html);
+        return writeFileAsync("README.md", html);
 
     })
     .then(function () {
