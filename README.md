@@ -1,11 +1,11 @@
 
-##Table of Contents
-#####1. [Project Description](#description)
-#####2. [GitHub Address](#GitHub)
-#####3. [License Type](#license)
-#####4. [Dependencies](#dep)
-#####5. [Test Run Commands](#test)
-#####6. [Author Contact Information](#author)
+## Table of Contents
+##### 1. [Project Description](#description)
+##### 2. [GitHub Address](#GitHub)
+##### 3. [License Type](#license)
+##### 4. [Dependencies](#dep)
+##### 5. [Test Run Commands](#test)
+##### 6. [Author Contact Information](#author)
 
 #**ReadMe Generator**
 
