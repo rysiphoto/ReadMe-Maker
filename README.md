@@ -9,10 +9,10 @@
 
 # **ReadMe Generator**
 
-### **Project Description:** {#description}
+### **Project Description:**(#description)
 ##### Creates a well formatted ReadMe file for projects by utilizing markdown 
 
-### **GitHub Address:** {#GitHub}
+### **GitHub Address:**(# GitHub)
 [ReadMe Generator](https://github.com/rysiphoto/ReadMe-Maker)
 
 ### **License Type:** {#license}
