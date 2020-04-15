@@ -1,85 +1,103 @@
+const inquirer = require("inquirer");
+const fs = require("fs");
+const util = require("util");
 
-// // fs.writeFile("ReadMe.txt",  + `\n`)
+const writeFileAsync = util.promisify(fs.writeFile);
 
-// const questions = ["What is the title of your project?", "What does your project do?", "What is your license?",
-//     "Tests", "GitHub website"];
+function promptUser() {
+    return inquirer.prompt([
+        {
+            type: "input",
+            name: "name",
+            message: "What is your project name?"
+        }, {
+            type: "input",
+            name: "email",
+            message: "What is your email address?"
+        }, {
+            type: "input",
+            name: "url",
+            message: "What is the URL for your project?"
+        }, {
+            type: "input",
+            name: "desc",
+            message: "Please enter a short description of what your project does."
+        }, {
+            type: "input",
+            name: "license",
+            message: "What kind of license should your project have?"
+        }, {
+            type: "input",
+            name: "dep",
+            message: "What command should be run to install dependencies?"
+        }, {
+            type: "input",
+            name: "test",
+            message: "What command should be run to run tests?"
+        }, {
+            type: "input",
+            name: "github",
+            message: "What is your GitHub address?"
+        }, {
+            type: "input",
+            name: "linkedin",
+            message: "What is your LinkedIn address?"
+        }
+    ]);
+}
+function generateMD(answers) {
+    return `
+ 
+    # **${answers.name}**
+
+    ### **Project Description:**
+    #####${answers.desc}
+
+    ### **GitHub Address:**
+    ${answers.url}
+
+    ### **License Type:**
+    #####${answers.license}
+
+    ### **Dependencies**
+    #####${answers.dep}
+    
+    ### **Test Run Commands**
+    #####${answers.test}
+
+    ### **Author Contact Information:**
+    ${answers.name}   || ${answers.email}
+    ${answers.github}
+    ${answers.linkedin}
 
 
-var inquirer = require("inquirer");
-var fs = require("fs");
+   ####### Ryan Siverson 2020
 
-inquirer.prompt([
-    {
-        type: "input",
-        message: "What is the developers name?",
-        name: "name"
-    },
-    {
-        type: "input",
-        message: "What is the title of your project?",
-        name: "title"
-    },
-    {
-        type: "input",
-        message: "What does your project do?",
-        name: "purpose"
+`;
+}
 
-    },
-    {
-        type: "input",
-        message: "What is the license type?",
-        name: "license"
+promptUser()
+    .then(function (answers) {
+        const html = generateMD(answers);
 
-    },
-    {
-        type: "input",
-        message: "What is your GitHub Repo address?",
-        name: "ghaddress"
-    }
-])
+        return writeFileAsync("index.md", html);
 
-    .then(function (response) {
-
-
-        console.log(`
-         ${response.name}
-         ${response.title}
-         ${response.purpose}
-         ${response.license}
-         ${response.ghaddress}
-         `);
-
-        var filename = response.name.toLowerCase().split(" ").join("") + ".md";
-
-        //(filename, whatToWrite, callback)
-        fs.writeFile(filename, JSON.stringify(response, null, 4), function (err) {
-
-            if (err) {
-                return console.log(err);
-            }
-            //success!
-            console.log(`Successfully wrote to file ${filename}`);
-        });
-
+    })
+    .then(function () {
+        console.log("successfully wrote to index.html");
+    })
+    .catch(function (err) {
+        console.log(err);
     });
-// * At least one badge
-//  What is the title of your project?
-// Describe what your project does: 
-//   Installation
-// * Usage
-// * License
-// * Contributing
-// * Tests
-// * Questions
-//   * User GitHub profile picture
-//   * User GitHub email
+    //     console.log(`
+    //      ${response.name}
+    //      ${response.title}
+    //      ${response.purpose}
+    //      ${response.license}
+    //      ${response.ghaddress}
+    //      `);
 
+    //     var filename = response.name.toLowerCase().split(" ").join("") + ".md";
 
-// function writeToFile("ReadMe.txt", "utf8") {
-// }
-// //  Table of Contents
-// function init() {
-
-// }
-
-// init();
+    //     //(filename, whatToWrite, callback)
+    //     fs.generateMD(filename, JSON.stringify(response, null, 4), function (err) {
