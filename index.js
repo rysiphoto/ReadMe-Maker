@@ -47,31 +47,39 @@ function promptUser() {
 }
 function generateMD(answers) {
     return `
- 
-    # **${answers.name}**
+    Table of Contents
+    Project Description
+    GitHub Address
+    License Type
+    Dependencies
+    Test Run Commands
+    Author Contact Information
 
-    ### **Project Description:**
+    #**${answers.name}**
+
+    ###**Project Description:** {#description}
     #####${answers.desc}
 
-    ### **GitHub Address:**
-    ${answers.url}
+    ###**GitHub Address:** {#GitHub}
+    (${answers.url})
 
-    ### **License Type:**
+    ###**License Type:** {#license}
     #####${answers.license}
 
-    ### **Dependencies**
+    ###**Dependencies** {#dep}
     #####${answers.dep}
     
-    ### **Test Run Commands**
+    ###**Test Run Commands** {#test}
     #####${answers.test}
 
-    ### **Author Contact Information:**
-    ${answers.name}   || ${answers.email}
-    ${answers.github}
-    ${answers.linkedin}
+    ###**Author Contact Information:** {#author}
+    - ${answers.name}
+    - ${answers.email}
+    - [GitHub] (${answers.github})
+    - [LinkedIn] (${answers.linkedin})
 
 
-   ####### Ryan Siverson 2020
+   #######Ryan Siverson 2020
 
 `;
 }
