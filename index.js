@@ -8,6 +8,11 @@ function promptUser() {
     return inquirer.prompt([
         {
             type: "input",
+            name: "aname",
+            message: "What is your name?"
+        },
+        {
+            type: "input",
             name: "name",
             message: "What is your project name?"
         }, {
@@ -17,7 +22,7 @@ function promptUser() {
         }, {
             type: "input",
             name: "url",
-            message: "What is the URL for your project?"
+            message: "What is the GitHub URL for your project?"
         }, {
             type: "input",
             name: "desc",
@@ -47,39 +52,39 @@ function promptUser() {
 }
 function generateMD(answers) {
     return `
-    Table of Contents
-    Project Description
-    GitHub Address
-    License Type
-    Dependencies
-    Test Run Commands
-    Author Contact Information
+##Table of Contents
+#####1. [Project Description](#description)
+#####2. [GitHub Address](#GitHub)
+#####3. [License Type](#license)
+#####4. [Dependencies](#dep)
+#####5. [Test Run Commands](#test)
+#####6. [Author Contact Information](#author)
 
-    #**${answers.name}**
+#**${answers.name}**
 
-    ###**Project Description:** {#description}
-    #####${answers.desc}
+###**Project Description:** {#description}
+#####${answers.desc}
 
-    ###**GitHub Address:** {#GitHub}
-    (${answers.url})
+###**GitHub Address:** {#GitHub}
+[${answers.name}](${answers.url})
 
-    ###**License Type:** {#license}
-    #####${answers.license}
+###**License Type:** {#license}
+#####${answers.license}
 
-    ###**Dependencies** {#dep}
-    #####${answers.dep}
+###**Dependencies** {#dep}
+#####${answers.dep}
     
-    ###**Test Run Commands** {#test}
-    #####${answers.test}
+###**Test Run Commands** {#test}
+#####${answers.test}
 
-    ###**Author Contact Information:** {#author}
-    - ${answers.name}
-    - ${answers.email}
-    - [GitHub] (${answers.github})
-    - [LinkedIn] (${answers.linkedin})
+###**Author Contact Information:** {#author}
+* ${answers.aname}
+* ${answers.email}
+* [GitHub](${answers.github})
+* [LinkedIn](${answers.linkedin})
 
 
-   #######Ryan Siverson 2020
+######© ${answers.aname} 2020
 
 `;
 }
