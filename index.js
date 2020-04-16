@@ -30,15 +30,19 @@ function promptUser() {
         }, {
             type: "input",
             name: "license",
-            message: "What kind of license should your project have?"
+            message: "What kind of license should your project have?",
+            default: "MIT"
+
         }, {
             type: "input",
             name: "dep",
-            message: "What command should be run to install dependencies?"
+            message: "What command should be run to install dependencies?",
+            default: "npm i"
         }, {
             type: "input",
             name: "test",
-            message: "What command should be run to run tests?"
+            message: "What command should be run to run tests?",
+            default: "node index"
         }, {
             type: "input",
             name: "github",
@@ -86,7 +90,7 @@ function generateMD(answers) {
 ##### ${answers.question}
 ---
 ### **Author Contact Information:**
-![MyFace](https://avatars3.githubusercontent.com/u/61304775?s=400&u=d99beab884a1c29674dba64712a08086272d692b&v=4)
+![MyFace](https://avatars3.githubusercontent.com/u/61304775?s=150&u=d99beab884a1c29674dba64712a08086272d692b&v=4)
 * ${answers.aname}
 * ${answers.email}
 * [GitHub](${answers.github})

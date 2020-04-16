@@ -29,7 +29,7 @@
 ##### None
 ---
 ### **Author Contact Information:**
-![MyFace](https://avatars3.githubusercontent.com/u/61304775?s=400&u=d99beab884a1c29674dba64712a08086272d692b&v=4)
+![MyFace](https://avatars3.githubusercontent.com/u/61304775?s=150&u=d99beab884a1c29674dba64712a08086272d692b&v=4)
 * Ryan Siverson
 * ryan.siverson@du.edu
 * [GitHub](https://github.com/rysiphoto)
