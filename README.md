@@ -10,7 +10,7 @@
 # **ReadMe Generator**
 
 ### **Project Description:**
-##### Creates a well-formatted ReadMe.md file for GitHub
+##### This creates a well-formatted ReadMe file for GitHub
 
 ### **GitHub Address:**
 [ReadMe Generator](https://github.com/rysiphoto/ReadMe-Maker)
@@ -26,7 +26,7 @@
 ##### node index
 
 ### **Questions**
-##### None for now
+##### None
 
 ### **Author Contact Information:**
 [MyFace](https://avatars3.githubusercontent.com/u/61304775?s=400&u=d99beab884a1c29674dba64712a08086272d692b&v=4)

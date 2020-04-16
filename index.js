@@ -111,15 +111,3 @@ promptUser()
     .catch(function (err) {
         console.log(err);
     });
-    //     console.log(`
-    //      ${response.name}
-    //      ${response.title}
-    //      ${response.purpose}
-    //      ${response.license}
-    //      ${response.ghaddress}
-    //      `);
-
-    //     var filename = response.name.toLowerCase().split(" ").join("") + ".md";
-
-    //     //(filename, whatToWrite, callback)
-    //     fs.generateMD(filename, JSON.stringify(response, null, 4), function (err) {
