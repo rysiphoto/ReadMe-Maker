@@ -63,38 +63,38 @@ function generateMD(answers) {
 ##### 4. [Dependencies](#Dependencies)
 ##### 5. [Test Run Commands](#Test-Run-Commands)
 ##### 6. [Author Contact Information](#Author-Contact-Information)
-
+---
 # **${answers.name}**
 
 ### **Project Description:**
 ##### ${answers.desc}
-
+---
 ### **GitHub Address:**
 [${answers.name}](${answers.url})
-
+---
 ### **License Type:**
 ##### ${answers.license}
-![MIC License](https://img.shields.io/badge/license-MIT-green)
-
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+---
 ### **Dependencies**
 ##### ${answers.dep}
-    
+---
 ### **Test Run Commands**
 ##### ${answers.test}
-
+---
 ### **Questions**
 ##### ${answers.question}
-
+---
 ### **Author Contact Information:**
-[MyFace](https://avatars3.githubusercontent.com/u/61304775?s=400&u=d99beab884a1c29674dba64712a08086272d692b&v=4)
+![MyFace](https://avatars3.githubusercontent.com/u/61304775?s=400&u=d99beab884a1c29674dba64712a08086272d692b&v=4)
 * ${answers.aname}
 * ${answers.email}
 * [GitHub](${answers.github})
 * [LinkedIn](${answers.linkedin})
 
-
+---
+---
 ###### © ${answers.aname} 2020
-
 `;
 }
 
