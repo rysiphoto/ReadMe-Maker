@@ -9,7 +9,8 @@ function promptUser() {
         {
             type: "input",
             name: "aname",
-            message: "What is your name?"
+            message: "What is your name?",
+            default: "Ryan Siverson"
         },
         {
             type: "input",
@@ -18,11 +19,13 @@ function promptUser() {
         }, {
             type: "input",
             name: "email",
-            message: "What is your email address?"
+            message: "What is your email address?",
+            default: "rcsskier@mac.com"
         }, {
             type: "input",
             name: "url",
             message: "What is the GitHub URL for your project?"
+
         }, {
             type: "input",
             name: "desc",
@@ -42,19 +45,21 @@ function promptUser() {
             type: "input",
             name: "test",
             message: "What command should be run to run tests?",
-            default: "node index"
+            default: "node server"
         }, {
             type: "input",
             name: "github",
-            message: "What is your GitHub address?"
+            message: "What is your GitHub address?",
+            default: "https://github.com/rysiphoto"
         }, {
             type: "input",
             name: "linkedin",
-            message: "What is your LinkedIn address?"
+            message: "What is your LinkedIn address?",
+            default: "https://www.linkedin.com/in/ryan-siverson-695b5a32/"
         }, {
             type: "input",
-            name: "question",
-            message: "Questions?"
+            name: "screenShot",
+            message: "Screenshot filename of the program working"
         }
     ]);
 }
@@ -86,8 +91,12 @@ function generateMD(answers) {
 ### **Test Run Commands**
 ##### ${answers.test}
 ---
-### **Questions**
-##### ${answers.question}
+### **Image**
+<img src="${answers.screenShot}">
+
+
+
+##### 
 ---
 ### **Author Contact Information:**
 ![MyFace](https://avatars3.githubusercontent.com/u/61304775?s=150&u=d99beab884a1c29674dba64712a08086272d692b&v=4)

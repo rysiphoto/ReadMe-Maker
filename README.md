@@ -7,13 +7,13 @@
 ##### 5. [Test Run Commands](#Test-Run-Commands)
 ##### 6. [Author Contact Information](#Author-Contact-Information)
 ---
-# **ReadMe File Generator**
+# **ReadMe Maker**
 
 ### **Project Description:**
-##### This creates a well-formatted ReadMe markdown file for GitHub
+##### Creates a well-formatted ReadMe file for each project through Node.js. It has several default values talored to my information to make creating the files quick and easy with very little extra input required.
 ---
 ### **GitHub Address:**
-[ReadMe File Generator](https://github.com/rysiphoto/ReadMe-Maker)
+[ReadMe Maker](https://github.com/rysiphoto/ReadMe-Maker)
 ---
 ### **License Type:**
 ##### MIT
@@ -25,13 +25,17 @@
 ### **Test Run Commands**
 ##### node index
 ---
-### **Questions**
-##### None
+### **Image**
+<img src="readMeMaker.png">
+
+
+
+##### 
 ---
 ### **Author Contact Information:**
 ![MyFace](https://avatars3.githubusercontent.com/u/61304775?s=150&u=d99beab884a1c29674dba64712a08086272d692b&v=4)
 * Ryan Siverson
-* ryan.siverson@du.edu
+* rcsskier@mac.com
 * [GitHub](https://github.com/rysiphoto)
 * [LinkedIn](https://www.linkedin.com/in/ryan-siverson-695b5a32/)
 
