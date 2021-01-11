@@ -60,6 +60,11 @@ function promptUser() {
             type: "input",
             name: "screenShot",
             message: "Screenshot filename of the program working"
+        }, {
+            type: "input",
+            name: "fileName",
+            message: "What is the name of your ReadMe file?",
+            default: "ReadMe.md"
         }
     ]);
 }
@@ -115,11 +120,11 @@ promptUser()
     .then(function (answers) {
         const html = generateMD(answers);
 
-        return writeFileAsync("ReadMe.md", html);
+        return writeFileAsync(`${answers.fileName}.md`, html);
 
     })
     .then(function () {
-        console.log("successfully wrote to ReadMe.md");
+        console.log(`Successfully created ${answers.fileName}.md`);
     })
     .catch(function (err) {
         console.log(err);
