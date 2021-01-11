@@ -20,7 +20,7 @@ function promptUser() {
             type: "input",
             name: "email",
             message: "What is your email address?",
-            default: "rcsskier@mac.com"
+            default: "ryan.siverson@gmail.com"
         }, {
             type: "input",
             name: "url",
